@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Track My Market</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+        .banner {
+            background-image: url('images/background.jpg'); /* Chemin d'accès à votre image */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Partners</a></li>
+                <li><a href="#">Our story</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="banner">
+        <div class="container">
+            <h1>Track My Market</h1>
+            <h2>Facilitate your groceries</h2>
+            <a href="#" id="discover-btn" style="background:white;
+            color: black; padding: 10px 20px; display: inline-block; text-decoration: none;">Start your grocery itinary</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Choose your favorite supermarket</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="images/carrefour.png" alt="Carrefour">
+                <h3>Carrefour</h3>
+            </div>
+            <div class="card">
+                <img src="images/auchan.png" alt="Auchan">
+                <h3>Auchan</h3>
+            </div>
+            <div class="card">
+                <img src="images/leclerc.png" alt="Leclerc">
+                <h3>Leclerc</h3>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Find us on the AppStore
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const discoverButton = document.getElementById("discover-btn");
+            const typeformContainer = document.querySelector(".typeform");
+
+            discoverButton.addEventListener("click", function (event) {
+                event.preventDefault();
+                typeformContainer.style.display = "block";
+            });
+        });
+    </script>
+</body>
+
+</html>
